@@ -1,10 +1,12 @@
 <template>
   <nav class="navbar navbar-expand-md navbar-light">
-    <a class="navbar-brand" href="#">
-      <strong>ABD</strong>
-      <br/> Tax Accounting LLC</a>
-    <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
-      aria-expanded="false" aria-label="Toggle navigation"></button>
+    <!--<a class="navbar-brand" href="#">-->
+    <!--<strong>ABD</strong>-->
+    <!--<br/> Tax Accounting LLC</a>-->
+    <button class="navbar-toggler hidden-lg-up" type="button"
+            data-toggle="collapse" data-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId"
+            aria-expanded="false" aria-label="Toggle navigation"></button>
     <div class="collapse navbar-collapse" id="collapsibleNavId">
       <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
         <li class="nav-item">
@@ -26,3 +28,29 @@
     </div>
   </nav>
 </template>
+
+<style scoped lang="scss">
+
+  @import "../scss/_variables.scss";
+
+  .navbar {
+    background: $prussian-blue;
+    a {
+      color: #FFF !important;
+      font-weight: 100;
+    }
+  }
+
+  .navbar-nav {
+    .nav-item {
+      a {
+        font-family: Oswald;
+        font-size: 1.1em;
+        &:hover {
+          color: $lavender !important;
+        }
+      }
+    }
+  }
+
+</style>
