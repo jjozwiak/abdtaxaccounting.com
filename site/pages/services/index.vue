@@ -1,19 +1,23 @@
 <template>
   <div id="services-content">
+    <header>
+      <div class="lead container">
+        <h1>Services</h1>
+      </div>
+    </header>
     <section class="mb-5 mt-5">
       <div class="container">
-        <h1>Services</h1>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
           Ullam quisquam rerum quos adipisci ipsam est labore itaque
           maxime, doloremque nulla. Numquam provident, alias saepe in
           sequi aspernatur eos rerum adipisci?</p>
       </div>
     </section>
-    <section class="mb-5 mt-5">
+    <section class="mb-5 mt-5 pb-5 pt-5">
       <div class="container">
         <div class="row">
           <div class="col-md-6">
-            <img src="https://picsum.photos/200/300/?blur" alt="">
+            <img src="~/assets/paper-stack-cropped.jpg" alt="" class="img-fluid">
           </div>
           <div class="col-md-6">
             <h2 id="tax-return-preparation">Tax Return
@@ -34,7 +38,7 @@
         </div>
       </div>
     </section>
-    <section class="mb-5 mt-5">
+    <section class="mb-5 mt-5 pb-5 pt-5 tax-planning">
       <div class="container">
         <div class="row">
           <div class="col-md-6">
@@ -56,16 +60,16 @@
             </ul>
           </div>
           <div class="col-md-6">
-            <img src="https://picsum.photos/200/300/?blur" alt="">
+            <img src="~/assets/services-tax-planning.jpg" alt="" class="img-fluid">
           </div>
         </div>
       </div>
     </section>
-    <section class="mb-5 mt-5">
+    <section class="mb-5 mt-5 pb-5 pt-5">
       <div class="container">
         <div class="row">
           <div class="col-md-6">
-            <img src="https://picsum.photos/200/300/?blur" alt="">
+            <img src="~/assets/services-audit-representation.jpg" alt="" class="img-fluid">
           </div>
           <div class="col-md-6">
             <h2>Tax Audit Assistance and IRS Representation</h2>
@@ -96,10 +100,49 @@
 
   @import "~/scss/_variables.scss";
 
-  img {
-    height: 300px;
-    width: 100%;
+  header {
+    background-image: url('~/assets/about-header-alt-b&w.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 -100px;
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+
+    &:before {
+      background: rgba(11, 60, 93, 0.6);
+
+      content: '';
+      height: 250px;
+      left: 0;
+      position: absolute;
+      -webkit-backface-visibility: hidden;
+      width: 100%;
+      z-index: 10;
+    }
+    h1 {
+      color: #FFF;
+    }
+    .lead {
+      bottom: 0;
+      width: 100%;
+      h1 {
+        color: #FFF;
+        font-family: Oswald;
+        font-size: 2.5em;
+        line-height: 1.6em;
+        padding: 80px 0;
+        position: relative;
+        width: 100%;
+        z-index: 100;
+      }
+    }
   }
+
+  /*img {*/
+    /*height: 300px;*/
+    /*width: 100%;*/
+  /*}*/
 
   a.service-link {
     color: inherit;
@@ -109,4 +152,7 @@
     }
   }
 
+  .tax-planning {
+    background: $paper;
+  }
 </style>
