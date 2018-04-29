@@ -94,25 +94,29 @@
       </div>
     </section>
     <section id="testimonials">
-      <div class="container mb-5 mt-5">
+      <div class="container mt-5 text-center">
         <h2>Testimonials</h2>
         <div id="carouselId" class="carousel slide"
              data-ride="carousel">
-          <ol class="carousel-indicators">
-            <li data-target="#carouselId" data-slide-to="0"
-                class="active"></li>
-            <li data-target="#carouselId" data-slide-to="1"></li>
-            <li data-target="#carouselId" data-slide-to="2"></li>
-          </ol>
           <div class="carousel-inner" role="listbox">
             <div class="carousel-item active">
-              <p class="tesitmonial-quote">
-                Lorem ipsum dolor sit amet consectetur
+              <p class="testimonial-quote">
+                "Lorem ipsum dolor sit amet consectetur
                 adipisicing elit. Fuga aliquid in dolor commodi
                 laboriosam quis exercitationem, quas,
                 neque suscipit nobis dicta officia perferendis.
                 Nesciunt ab iste inventore accusantium magni
-                voluptates.
+                voluptates." &mdash; Firstname Lastname
+              </p>
+            </div>
+            <div class="carousel-item">
+              <p class="testimonial-quote">
+                "Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Fuga aliquid in dolor commodi
+                laboriosam quis exercitationem, quas,
+                neque suscipit nobis dicta officia perferendis.
+                Nesciunt ab iste inventore accusantium magni
+                voluptates." &mdash; Firstname Lastname
               </p>
             </div>
             <div class="carousel-item">
@@ -122,30 +126,18 @@
                 laboriosam quis exercitationem, quas,
                 neque suscipit nobis dicta officia perferendis.
                 Nesciunt ab iste inventore accusantium magni
-                voluptates.
-              </p>
-            </div>
-            <div class="carousel-item">
-              <p class="testimonial-quote">
-                Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Fuga aliquid in dolor commodi
-                laboriosam quis exercitationem, quas,
-                neque suscipit nobis dicta officia perferendis.
-                Nesciunt ab iste inventore accusantium magni
-                voluptates.
+                voluptates. &mdash; Firstname Lastname
               </p>
             </div>
           </div>
           <a class="carousel-control-prev" href="#carouselId"
              role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon"
-                              aria-hidden="true"></span>
+            <i class="fas fa-angle-left"></i>
             <span class="sr-only">Previous</span>
           </a>
           <a class="carousel-control-next" href="#carouselId"
              role="button" data-slide="next">
-                        <span class="carousel-control-next-icon"
-                              aria-hidden="true"></span>
+            <i class="fas fa-angle-right"></i>
             <span class="sr-only">Next</span>
           </a>
         </div>
@@ -203,7 +195,7 @@
     left: 0;
     position: absolute;
     transform: skewY(-20.5deg);
-    -webkit-transform: skewY(-2.5deg);
+    -webkit-transform: skewY(-20.5deg);
     -moz-transform: skewY(-20.5deg);
     -ms-transform: skewY(-20.5deg);
     -o-transform: skewY(-20.5deg);
@@ -220,6 +212,9 @@
 
   .card {
     position: relative;
+    h3 {
+      color: $copy;
+    }
     a {
       &:hover {
         text-decoration: none !important;
@@ -259,11 +254,22 @@
   }
 
   .carousel-inner {
-    height: 200px;
+    height: 150px;
+  }
+
+  .carousel-control-next,
+  .carousel-control-prev {
+    align-items: flex-start !important;
   }
 
   .testimonial-quote {
     display: block;
+    margin: 0 auto;
+    max-width: 800px;
   }
 
+  .fas {
+    color: $prussian-blue;
+    font-size: 2em;
+  }
 </style>

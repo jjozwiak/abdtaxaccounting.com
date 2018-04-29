@@ -92,6 +92,9 @@
   footer {
     background: $paper;
     color: #FFF;
+    h4 {
+      color: #FFF;
+    }
     p, address {
       margin: 0;
     }
