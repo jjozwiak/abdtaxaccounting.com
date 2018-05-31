@@ -1,19 +1,13 @@
 <template>
   <div id="services-content">
-    <header>
-      <div class="lead container">
-        <h1>Services</h1>
-      </div>
-    </header>
-    <section class="mb-5 mt-5">
+    <banner-component text="Services"></banner-component>
+    <!-- <section class="mb-5 mt-5">
       <div class="container">
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-          Ullam quisquam rerum quos adipisci ipsam est labore itaque
-          maxime, doloremque nulla. Numquam provident, alias saepe in
-          sequi aspernatur eos rerum adipisci?</p>
+        <p>We offer a range of services to help individuals and small businesses 
+          navigate the complexities of the tax landscape.</p>
       </div>
-    </section>
-    <section class="mb-5 mt-5 pb-5 pt-5">
+    </section> -->
+    <section>
       <div class="container">
         <div class="row">
           <div class="col-md-6">
@@ -38,7 +32,7 @@
         </div>
       </div>
     </section>
-    <section class="mb-5 mt-5 pb-5 pt-5 tax-planning">
+    <section class="tax-planning">
       <div class="container">
         <div class="row">
           <div class="col-md-6">
@@ -65,7 +59,7 @@
         </div>
       </div>
     </section>
-    <section class="mb-5 mt-5 pb-5 pt-5">
+    <section>
       <div class="container">
         <div class="row">
           <div class="col-md-6">
@@ -87,7 +81,11 @@
 </template>
 
 <script>
+  import BannerComponent from '~/components/BannerComponent.vue'
   export default {
+    components: {
+      BannerComponent
+    },
     head() {
       return {
         title: 'Services | ABD Tax Accounting LLC'
@@ -100,50 +98,6 @@
 
   @import "~/scss/_variables.scss";
 
-  header {
-    background-image: url('~/assets/about-header-alt-b&w.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 0 -100px;
-    height: 250px;
-    overflow: hidden;
-    position: relative;
-
-    &:before {
-      background: rgba(11, 60, 93, 0.6);
-
-      content: '';
-      height: 250px;
-      left: 0;
-      position: absolute;
-      -webkit-backface-visibility: hidden;
-      width: 100%;
-      z-index: 10;
-    }
-    h1 {
-      color: #FFF;
-    }
-    .lead {
-      bottom: 0;
-      width: 100%;
-      h1 {
-        color: #FFF;
-        font-family: Oswald;
-        font-size: 2.5em;
-        line-height: 1.6em;
-        padding: 80px 0;
-        position: relative;
-        width: 100%;
-        z-index: 100;
-      }
-    }
-  }
-
-  /*img {*/
-    /*height: 300px;*/
-    /*width: 100%;*/
-  /*}*/
-
   a.service-link {
     color: inherit;
     &:hover {
@@ -154,5 +108,10 @@
 
   .tax-planning {
     background: $paper;
+  }
+
+  .row {
+    padding-top: 100px;
+    padding-bottom: 100px;
   }
 </style>
