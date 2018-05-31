@@ -4,23 +4,20 @@
       <div class="lead">
         <p>ABD Tax Accounting LLC<br/> is a CPA firm in Boulder,
           Colorado<br/> specializing in tax preparation and tax<br/>
-          planning for individuals
-          and small businesses.</p>
+          planning for individuals and small businesses.</p>
       </div>
     </div>
     <section class="container">
-      <div class="row mb-5 mt-5 home-intro">
+      <div class="row home-intro">
         <div class="col-sm-12 text-center">
           <h1>Our Story</h1>
           <p>Our owner and head CPA once pursued a PhD in accounting
             and left her program with all but her dissertation (ABD)
             complete. As a nod to her unfinished degree our firm is
             named ABD Tax Accounting LLC. While a PhD didn’t work
-            for
-            her, you can let her extensive accounting knowledge work
+            for her, you can let her extensive accounting knowledge work
             for you in all your tax-based needs. Contact us today
-            for a free initial consultation to see if we can
-            help.</p>
+            for a free initial consultation to see if we can help.</p>
         </div>
       </div>
     </section>
@@ -188,7 +185,7 @@
   }
 
   .jumbotron-home:before {
-    background: rgba(11, 60, 93, 0.9);
+    background: rgba(37, 93, 110, 0.9);
     bottom: -312px;
     content: '';
     height: 704px;
@@ -205,6 +202,10 @@
   }
 
   .home-intro {
+    
+    margin: 100px auto;
+    max-width: 800px;
+
     p {
       font-size: 1.2em;
     }
@@ -221,7 +222,7 @@
       }
     }
     .overlay {
-      background: rgba(11, 60, 93, 0.9);
+      background: rgba(37, 93, 110, 0.9);
       color: #FFF;
       display: none;
       height: 100%;

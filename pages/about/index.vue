@@ -1,20 +1,13 @@
 <template>
-  <div>
-    <header>
-      <div class="lead container">
-        <h1>About</h1>
-      </div>
-    </header>
-    <section class="mb-5 mt-5">
+  <div id="about-content">
+    <banner-component text="About"></banner-component>
+    <section class="about-section">
       <div class="container">
-        <section class="mb-5 mt-5">
-          <h2>TLDR</h2>
-          <p>Amber is a CPA
-            and has an extensive background in tax. She thought she wanted
-            to be an accounting PhD, but turns out that wasn’t the case so
-            she opened her own tax practice instead. Amber likes the
-            outdoors and dogs.</p>
-        </section>
+        <div class="row">
+          <div class="col-sm-12">
+            <h2>Amber Alfano</h2>
+          </div>
+        </div>
         <div class="row">
           <div class="col-md-4">
             <img
@@ -49,13 +42,27 @@
               is married and has two dogs whom she treats like children.</p>
           </div>
         </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <h3>TLDR</h3>
+            <p>Amber is a CPA
+              and has an extensive background in tax. She thought she wanted
+              to be an accounting PhD, but turns out that wasn’t the case so
+              she opened her own tax practice instead. Amber likes the
+              outdoors and dogs.</p>
+          </div>
+        </div>
       </div>
     </section>
   </div>
 </template>
 
 <script>
+  import BannerComponent from '~/components/BannerComponent.vue'
   export default {
+    components: {
+      BannerComponent
+    },
     head() {
       return {
         title: 'About | ABD Tax Accounting LLC'
@@ -64,44 +71,12 @@
   }
 </script>
 
+
 <style scoped lang="scss">
-  header {
-    background-image: url('~/assets/about-header-alt-b&w.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 0 -100px;
-    height: 250px;
-    overflow: hidden;
-    position: relative;
-
-    &:before {
-      background: rgba(11, 60, 93, 0.6);
-
-      content: '';
-      height: 250px;
-      left: 0;
-      position: absolute;
-      -webkit-backface-visibility: hidden;
-      width: 100%;
-      z-index: 10;
-    }
-    h1 {
-      color: #FFF;
-    }
-    .lead {
-      bottom: 0;
-      width: 100%;
-      h1 {
-        color: #FFF;
-        font-family: Oswald;
-        font-size: 2.5em;
-        line-height: 1.6em;
-        padding: 80px 0;
-        position: relative;
-        width: 100%;
-        z-index: 100;
-      }
-    }
+  .about-section {
+    padding-top: 100px;
+    padding-bottom: 100px;
   }
 </style>
+
 

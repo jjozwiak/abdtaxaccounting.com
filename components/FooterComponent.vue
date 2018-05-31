@@ -12,7 +12,7 @@
               <br/>
               <strong>Office:</strong> 970-480-7157
               <br/>
-              <strong>Address:</strong> Boulder CO 80303
+              <strong>Address:</strong> 2505 Walnut Street, Suite 300, Boulder, CO 80302
               <br/>
               <strong>Email:</strong>
               <span> amber.alfano</span><span>@gmail</span>.com
