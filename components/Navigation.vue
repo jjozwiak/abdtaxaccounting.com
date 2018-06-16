@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar navbar-expand-md navbar-light">
+  <nav class="navbar fixed-top navbar-expand-md navbar-light">
     <!--<a class="navbar-brand" href="#">-->
     <!--<strong>ABD</strong>-->
     <!--<br/> Tax Accounting LLC</a>-->

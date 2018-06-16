@@ -204,14 +204,15 @@
   .home-intro {
     
     margin: 100px auto;
-    max-width: 800px;
+    max-width: 850px;
 
     p {
-      font-size: 1.2em;
+      font-size: 1.5em;
     }
   }
 
   .card {
+    border-radius: 0;
     position: relative;
     h3 {
       color: $copy;
@@ -221,13 +222,18 @@
         text-decoration: none !important;
       }
     }
+    .card-img-top {
+      border-radius: 0;
+    }
     .overlay {
       background: rgba(37, 93, 110, 0.9);
-      color: #FFF;
-      display: none;
-      height: 100%;
-      padding: 2em;
+      color: #fff;
+      overflow: hidden;
       position: absolute;
+      top: 100%; right: 0; bottom: 0; left: 0;
+      transition: top 0.3s, right 0.3s, bottom 0.3s, left 0.3s, padding 0.3s;
+      -moz-transition: top 0.3s, right 0.3s, bottom 0.3s, left 0.3s, padding 0.3s;
+      -webkit-transition: top 0.3s, right 0.3s, bottom 0.3s, left 0.3s, padding 0.3s;
       width: 100%;
       a {
         color: #FFF;
@@ -235,23 +241,30 @@
           text-decoration: none !important;
         }
       }
+
     }
     &:hover {
-      background: #000;
       a {
         text-decoration: none !important;
       }
       h3 {
         color: #FFF;
       }
+      .card-body {
+        background: #000;
+      }
       .overlay {
-        display: block;
+        padding: 2em;
+        top: 0;
       }
     }
   }
 
   #services {
     background: $paper;
+    a:hover {
+      text-decoration: none;
+    }
   }
 
   .carousel-inner {
