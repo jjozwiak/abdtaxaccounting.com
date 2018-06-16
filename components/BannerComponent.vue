@@ -23,6 +23,7 @@
     background-size: cover;
     background-position: 0 -450px;
     height: $height;
+    margin-top: 58px;
     overflow: hidden;
     position: relative;
 

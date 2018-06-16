@@ -163,6 +163,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     height: 900px;
+    margin-top: 58px;
     overflow: hidden;
     position: relative;
   }
