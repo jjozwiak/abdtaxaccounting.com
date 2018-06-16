@@ -40,25 +40,6 @@
               </div>
             </form>
           </div>
-          <!-- <nav class="col-md-2 footer-nav">
-            <ul>
-              <li>
-                <nuxt-link to="/">Home</nuxt-link>
-              </li>
-              <li>
-                <nuxt-link to="/about">About</nuxt-link>
-              </li>
-              <li>
-                <nuxt-link to="/services">Services</nuxt-link>
-              </li>
-              <li>
-                <nuxt-link to="/blog">Blog</nuxt-link>
-              </li>
-              <li>
-                <nuxt-link to="/">Client Portal</nuxt-link>
-              </li>
-            </ul>
-          </nav> -->
           <div class="col-md-2 offset-md-1 footer-social-media-links">
             <a href="https://www.linkedin.com/in/amber-alfano-2b6050a"
                target="_blank">
