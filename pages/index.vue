@@ -176,10 +176,10 @@
       font-family: Oswald;
       font-size: 2.5em;
       line-height: 1.6em;
-      padding: 0 80px 80px 0;
+      padding: 0 80px 0 40px;
       position: relative;
-      text-align: right;
-      top: 425px;
+      text-align: left;
+      top: 333px;
       width: 100%;
       z-index: 100;
     }
@@ -187,16 +187,16 @@
 
   .jumbotron-home:before {
     background: rgba(37, 93, 110, 0.9);
-    bottom: -312px;
+    bottom: -500px;
     content: '';
-    height: 704px;
+    height: 900px;
     left: 0;
     position: absolute;
-    transform: skewY(-20.5deg);
-    -webkit-transform: skewY(-20.5deg);
-    -moz-transform: skewY(-20.5deg);
-    -ms-transform: skewY(-20.5deg);
-    -o-transform: skewY(-20.5deg);
+    transform: skewY(26.5deg);
+    -webkit-transform: skewY(26.5deg);
+    -moz-transform: skewY(26.5deg);
+    -ms-transform: skewY(26.5deg);
+    -o-transform: skewY(26.5deg);
     -webkit-backface-visibility: hidden;
     width: 100%;
     z-index: 10;
