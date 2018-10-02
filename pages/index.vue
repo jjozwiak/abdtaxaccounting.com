@@ -11,7 +11,6 @@
       <div class="row home-intro">
         <div class="col-sm-12 text-center">
           <h1>Our Story</h1>
-<p>jflskjfdllksd</p>
           <p>Our owner and head CPA once pursued a PhD in accounting
             and left her program with all but her dissertation (ABD)
             complete. As a nod to her unfinished degree our firm is
