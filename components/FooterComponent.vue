@@ -7,7 +7,7 @@
             <h4>Contact Info</h4>
             <p><strong>Amber Alfano, CPA</strong></p>
             <p>
-              <strong><i class="fas fa-phone"></i></strong> 970-480-7157
+              <strong><i class="fas fa-phone"></i></strong> 303-261-8151
               <br/>
               <strong><i class="fas fa-mobile-alt"></i></strong> 305-905-0222
               <br/>
