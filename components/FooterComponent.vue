@@ -70,13 +70,23 @@
       <div class="container">
         <div class="row pt-1">
           <div class="col-sm-12">
-            <p>&copy;2018 ABD Tax Accounting LLC</p>
+            <p>&copy;2018 {{siteName}}</p>
           </div>
         </div>
       </div>
     </div>
   </footer>
 </template>
+
+<script>
+  export default {
+    data() {
+      return {
+        siteName: process.env.siteName,
+      };
+    },
+  };
+</script>
 
 <style scoped lang="scss">
 

@@ -1,4 +1,5 @@
-var baseURL = 'https://www.abdtaxaccounting.com';
+const baseURL = 'https://www.abdtaxaccounting.com';
+const siteName = 'ABD Tax Accounting LLC';
 
 module.exports = {
   modules: [
@@ -9,7 +10,8 @@ module.exports = {
   ** Environment Variables
   */
   env: {
-    baseURL: baseURL
+    baseURL: baseURL,
+    siteName: siteName
   },
 
   /*
@@ -17,7 +19,7 @@ module.exports = {
   */
   head: {
     title: 'abdtaxaccounting.com',
-    titleTemplate: '%s | ABD Tax Accounting LLC',
+    titleTemplate: '%s | ' + siteName,
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
