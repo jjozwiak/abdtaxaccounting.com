@@ -18,9 +18,6 @@
         <li class="nav-item">
           <nuxt-link to="/services" class="nav-link">Services</nuxt-link>
         </li>
-        <!--<li class="nav-item">-->
-          <!--<a class="nav-link" href="#">Blog</a>-->
-        <!--</li>-->
         <li class="nav-item last">
           <a class="nav-link" href="#">Client Portal</a>
         </li>
