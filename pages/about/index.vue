@@ -11,7 +11,7 @@
         <div class="row">
           <div class="col-md-4">
             <img
-                src="~/assets/BioPic.jpg"
+                src="~/assets/amber_alfano_headshot.jpg"
                 alt="portrait of Amber Alfano" class="img-fluid">
           </div>
           <div class="col-md-8">

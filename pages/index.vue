@@ -103,27 +103,15 @@
                 laboriosam quis exercitationem, quas,
                 neque suscipit nobis dicta officia perferendis.
                 Nesciunt ab iste inventore accusantium magni
-                voluptates." &mdash; Firstname Lastname
+                voluptates."<br/> &mdash; Firstname Lastname
               </p>
             </div>
             <div class="carousel-item">
               <p class="testimonial-quote">
-                "Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Fuga aliquid in dolor commodi
-                laboriosam quis exercitationem, quas,
-                neque suscipit nobis dicta officia perferendis.
-                Nesciunt ab iste inventore accusantium magni
-                voluptates." &mdash; Firstname Lastname
-              </p>
-            </div>
-            <div class="carousel-item">
-              <p class="testimonial-quote">
-                Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Fuga aliquid in dolor commodi
-                laboriosam quis exercitationem, quas,
-                neque suscipit nobis dicta officia perferendis.
-                Nesciunt ab iste inventore accusantium magni
-                voluptates. &mdash; Firstname Lastname
+                After starting my own web consulting company,
+                I thought I'd use Turbo Tax like I had for years as an individual.
+                I decided to hire ABD to compare results. I'm glad I did because ABD was
+                able to maximize my deductions and saved me much more than Turbo Tax.<br/>  &mdash; Jason Jozwiak, Plan B Development LLC
               </p>
             </div>
           </div>
@@ -159,7 +147,7 @@
   @import "~/scss/_variables.scss";
 
   .jumbotron-home {
-    background-image: url('~/assets/red-rocks-cropped-b&w-90.jpg');
+    background-image: url('~/assets/red-rocks-alt-cropped-b&w.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     height: 900px;
