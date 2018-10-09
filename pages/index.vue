@@ -136,7 +136,14 @@
     components: {},
     head() {
       return {
-        title: 'Home | ABD Tax Accounting LLC'
+        title: 'Home',
+        meta: [
+          { hid: 'description', name: 'description', content: 'ABD Tax Accounting LLC is a CPA firm in Boulder, Colorado specializing in tax preparation and tax planning for individuals and small businesses.' },
+          { hid: 'keywords', name: 'keywords', content: 'Boulder Tax Accounting, Boulder Tax Accountants, Boulder CPA'}
+        ],
+        link: [
+          { rel: 'canonical', href: process.env.baseURL }
+        ]
       }
     }
   }

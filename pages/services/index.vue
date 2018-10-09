@@ -82,7 +82,14 @@
     },
     head() {
       return {
-        title: 'Services | ABD Tax Accounting LLC'
+        title: 'Services',
+        meta: [
+          { hid: 'description', name: 'description', content: 'ABD Tax Accounting LLC offers a variety of tax services for individuals and small businesses.' },
+          { hid: 'keywords', name: 'keywords', content: 'Tax Services, Boulder Tax Services, Boulder CPA'}
+        ],
+        link: [
+          { rel: 'canonical', href: process.env.baseURL + '/services' }
+        ]
       }
     }
   }

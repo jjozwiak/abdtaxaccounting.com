@@ -65,7 +65,14 @@
     },
     head() {
       return {
-        title: 'About | ABD Tax Accounting LLC'
+        title: 'About',
+        meta: [
+          { hid: 'description', name: 'description', content: 'Amber Alfano is the owner and head CPA at ABD Tax Accounting LLC. Prior to opening her own practice, Amber spent the past decade immersed in the accounting world.' },
+          { hid: 'keywords', name: 'keywords', content: 'Tax Services, Boulder Tax Services, Boulder CPA, Amber Alfano, Amber Alfano CPA'}
+        ],
+        link: [
+          { rel: 'canonical', href: process.env.baseURL + '/about' }
+        ]
       }
     }
   }

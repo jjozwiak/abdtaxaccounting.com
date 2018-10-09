@@ -1,9 +1,23 @@
+var baseURL = 'https://www.abdtaxaccounting.com';
+
 module.exports = {
+  modules: [
+    '@nuxtjs/sitemap'
+  ],
+
+  /*
+  ** Environment Variables
+  */
+  env: {
+    baseURL: baseURL
+  },
+
   /*
   ** Headers of the page
   */
   head: {
     title: 'abdtaxaccounting.com',
+    titleTemplate: '%s | ABD Tax Accounting LLC',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -25,6 +39,18 @@ module.exports = {
   ** Customize the progress bar color
   */
   loading: { color: '#3B8070' },
+
+  /*
+  ** Generate Sitemap
+  */
+  sitemap: {
+    path: '/sitemap.xml',
+    hostname: baseURL,
+    cacheTime: 1000 * 60 * 15,
+    gzip: true,
+    generate: true, // Enable me when using nuxt generate
+  },
+
   /*
   ** Build configuration
   */
