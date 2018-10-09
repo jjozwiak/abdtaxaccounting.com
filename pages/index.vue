@@ -32,8 +32,8 @@
                        class="service-link">
               <div class="card text-left">
                 <img class="card-img-top"
-                     src="~/assets/paper-stack-cropped.jpg"
-                     alt="stack of files">
+                     src="~/assets/paper_stack_sm.jpg"
+                     alt="Stack of Color Coded Files">
                 <div class="card-body">
                   <h3 class="card-title">Tax Return
                     Preparation</h3>
@@ -52,7 +52,7 @@
             <nuxt-link to="/services" class="service-link">
               <div class="card text-left">
                 <img class="card-img-top"
-                     src="~/assets/meeting-cropped.jpg"
+                     src="~/assets/meeting.jpg"
                      alt="meeting">
                 <div class="card-body">
                   <h3 class="card-title">Tax Planning</h3>
@@ -71,7 +71,7 @@
             <nuxt-link to="/services" class="service-link">
               <div class="card text-left">
                 <img class="card-img-top"
-                     src="~/assets/meeting-alt-cropped.jpg"
+                     src="~/assets/meeting_overhead.jpg"
                      alt="meeting">
                 <div class="card-body">
                   <h3 class="card-title">Audit and IRS

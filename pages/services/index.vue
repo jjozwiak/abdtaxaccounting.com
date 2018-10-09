@@ -1,17 +1,11 @@
 <template>
   <div id="services-content">
     <banner-component text="Services"></banner-component>
-    <!-- <section class="mb-5 mt-5">
-      <div class="container">
-        <p>We offer a range of services to help individuals and small businesses 
-          navigate the complexities of the tax landscape.</p>
-      </div>
-    </section> -->
     <section>
       <div class="container">
         <div class="row">
           <div class="col-md-6">
-            <img src="~/assets/paper-stack-cropped.jpg" alt="" class="img-fluid">
+            <img src="~/assets/paper_stack_lg.jpg" alt="Stack of Color Coded Files" class="img-fluid">
           </div>
           <div class="col-md-6">
             <h2 id="tax-return-preparation">Tax Return
