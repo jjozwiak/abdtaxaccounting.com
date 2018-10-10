@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="jumbotron jumbotron-fluid jumbotron-home">
-      <div class="lead">
+      <div class="container lead">
         <p>ABD Tax Accounting LLC<br/> is a CPA firm in Boulder,
           Colorado<br/> specializing in tax preparation and tax<br/>
           planning for individuals and small businesses.</p>
@@ -9,7 +9,7 @@
     </div>
     <section class="container">
       <div class="row home-intro">
-        <div class="col-sm-12 text-center">
+        <div class="col-sm-12 text-md-center">
           <h1>Our Story</h1>
           <p>Our owner and head CPA once pursued a PhD in accounting
             and left her program with all but her dissertation (ABD)
@@ -79,7 +79,7 @@
       </div>
     </section>
     <section id="testimonials">
-      <div class="container mt-5 text-center">
+      <div class="container mt-5 mb-sm-5 text-center">
         <h2>Testimonials</h2>
         <div id="carouselId" class="carousel slide"
              data-ride="carousel">
@@ -142,13 +142,17 @@
   @import "~/scss/_variables.scss";
 
   .jumbotron-home {
-    background-image: url('~/assets/red-rocks-alt-cropped-b&w.jpg');
+    background-color: $teal;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 900px;
     margin-top: 58px;
     overflow: hidden;
     position: relative;
+    @media screen and (min-width: 768px) {
+      background-color: transparent;
+      background-image: url('~/assets/red-rocks-alt-cropped-b&w.jpg');
+      height: 900px;
+    }
   }
 
   .jumbotron-home .lead {
@@ -157,14 +161,28 @@
     p {
       color: #FFF;
       font-family: Oswald;
+      font-size: 1.5em;
+
+      text-align: left;
+      width: 100%;
+      z-index: 100;
+      br {
+        display: none;
+      }
+    }
+    @media screen and (min-width: 768px) {
       font-size: 2.5em;
       line-height: 1.6em;
       padding: 0 80px 0 40px;
       position: relative;
-      text-align: left;
+      margin-left: 0;
       top: 333px;
-      width: 100%;
       z-index: 100;
+      p {
+        br {
+          display: block;
+        }
+      }
     }
   }
 
@@ -172,6 +190,7 @@
     background: rgba(37, 93, 110, 0.9);
     bottom: -500px;
     content: '';
+    display: none;
     height: 900px;
     left: 0;
     position: absolute;
@@ -183,20 +202,27 @@
     -webkit-backface-visibility: hidden;
     width: 100%;
     z-index: 10;
+    @media screen and (min-width: 768px) {
+      display: block;
+    }
   }
 
   .home-intro {
-    
-    margin: 100px auto;
     max-width: 850px;
-
     p {
-      font-size: 1.5em;
+      font-size: 1.2em;
+    };
+    @media screen and (min-width: 768px) {
+      margin: 100px auto;
+      p {
+        font-size: 1.5em;
+      }
     }
   }
 
   .card {
     border-radius: 0;
+    margin-bottom: 2em;
     position: relative;
     h3 {
       color: $copy;

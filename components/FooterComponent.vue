@@ -3,7 +3,7 @@
     <div id="top-footer">
       <div class="container">
         <div class="row pt-5 pb-5">
-          <div class="col-md-4 footer-contact-info">
+          <div class="col-md-4 footer-col footer-contact-info">
             <h4>Contact Info</h4>
             <p><strong>Amber Alfano, CPA</strong></p>
             <p>
@@ -18,7 +18,7 @@
               2505 Walnut Street, Suite 300<br/> Boulder, CO 80302
             </address>
           </div>
-          <div class="col-md-5">
+          <div class="col-md-5 footer-col">
             <h4>Send Us an Email</h4>
             <form action="https://formspree.io/amber@abdtaxaccounting.com" method="POST" class="footer-contact-form">
               <div class="form-group row">
@@ -42,7 +42,7 @@
               </div>
             </form>
           </div>
-          <div class="col-md-1 offset-md-1 footer-social-media-links">
+          <div class="col-md-1 offset-md-1 footer-col footer-social-media-links">
             <a href="https://www.linkedin.com/in/amber-alfano-2b6050a"
                target="_blank" rel="noopener">
               <svg aria-labelledby="simpleicons-linkedin-icon"
@@ -135,19 +135,6 @@
         }
       }
     }
-
-    .footer-nav {
-      display: flex;
-      ul {
-        align-self: flex-end;
-        list-style: none;
-        a {
-          &:hover {
-            color: $prussian-blue;
-          }
-        }
-      }
-    }
   }
 
   .footer-contact-form {
@@ -183,4 +170,10 @@
     }
   }
 
+  .footer-col {
+    margin-bottom: 2em;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 0;
+    }
+  }
 </style>
