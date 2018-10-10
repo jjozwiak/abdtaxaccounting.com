@@ -12,7 +12,7 @@
               <strong><i class="fas fa-mobile-alt"></i></strong> 305-905-0222
               <br/>
               <strong><i class="far fa-envelope"></i></strong>
-              <span> amber.alfano</span><span>@gmail</span>.com
+              <span>amber</span><span>@abdtaxaccounting</span>.com
             </p>
             <address>
               2505 Walnut Street, Suite 300<br/> Boulder, CO 80302
@@ -20,10 +20,11 @@
           </div>
           <div class="col-md-5">
             <h4>Send Us an Email</h4>
-            <form action="" class="footer-contact-form">
+            <form action="https://formspree.io/amber@abdtaxaccounting.com" method="POST" class="footer-contact-form">
               <div class="form-group row">
                 <label for="contact-form-email-input" class="col-form-label sr-only">Your Email</label>
                 <div class="col-sm-12">
+                  <input type="hidden" name="_subject" value="Website Inquiry" />
                   <input id="contact-form-email-input" type="email" name="email" placeholder="Your Email" class="form-control">
                 </div>
               </div>
@@ -35,6 +36,7 @@
               </div>
               <div class="form-group row">
                 <div class="col-sm-3">
+                  <input type="text" name="_gotcha" style="display:none" />
                   <input type="submit" value="Send" class="btn">
                 </div>
               </div>
