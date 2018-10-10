@@ -3,7 +3,10 @@ const siteName = 'ABD Tax Accounting LLC';
 
 module.exports = {
   modules: [
-    '@nuxtjs/sitemap'
+    '@nuxtjs/sitemap',
+    ['@nuxtjs/google-analytics', {
+      id: 'UA-127256859-1'
+    }]
   ],
 
   /*
