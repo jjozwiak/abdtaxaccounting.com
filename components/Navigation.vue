@@ -7,8 +7,7 @@
             data-toggle="collapse" data-target="#collapsibleNavId"
             aria-controls="collapsibleNavId"
             aria-expanded="false" aria-label="Toggle navigation"
-            v-on:click="toggleHamburger"
-    >
+            v-on:click="toggleHamburger">
           <div id="nav-icon3">
             <span></span>
             <span></span>
@@ -56,7 +55,6 @@
 
   .navbar {
     background: $prussian-blue;
-    /*padding-left: 40px;*/
     .first {
       a {
         padding-left: 0;
@@ -66,7 +64,9 @@
       color: #FFF !important;
       font-weight: 100;
     }
-
+    @media screen and (min-width: 768px) {
+      padding-left: 40px;
+    }
   }
 
   .navbar-toggler {
@@ -86,7 +86,9 @@
     }
     @media screen and (min-width: 768px) {
       .nav-item {
-        font-size: 1.1em;
+        a {
+          font-size: 1.3em;
+        }
       }
     }
   }

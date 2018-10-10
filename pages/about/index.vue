@@ -12,7 +12,7 @@
           <div class="col-md-4">
             <img
                 src="~/assets/amber_alfano_headshot.jpg"
-                alt="portrait of Amber Alfano" class="img-fluid">
+                alt="portrait of Amber Alfano" class="img-fluid headshot">
           </div>
           <div class="col-md-8">
             <p>Amber Alfano is the owner and head CPA at ABD Tax Accounting LLC.
