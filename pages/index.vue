@@ -39,7 +39,8 @@
                     Preparation</h3>
                 </div>
                 <div class="overlay">
-                  <p>We prepare a wide range of both federal and state tax returns for individuals and small businesses.</p>
+                  <p>We prepare a wide range of both federal and state tax returns for individuals and small
+                    businesses.</p>
                 </div>
               </div>
             </nuxt-link>
@@ -54,7 +55,8 @@
                   <h3 class="card-title">Tax Planning</h3>
                 </div>
                 <div class="overlay">
-                  <p>No one likes surprises when it comes to tax.  We can help you plan the tax side of all your upcoming financial changes from selling your home to planning for retirement.</p>
+                  <p>No one likes surprises when it comes to tax. We can help you plan the tax side of all your upcoming
+                    financial changes from selling your home to planning for retirement.</p>
                 </div>
               </div>
             </nuxt-link>
@@ -70,7 +72,8 @@
                     Representation</h3>
                 </div>
                 <div class="overlay">
-                  <p>From responding to tax notices to being audited by the IRS or state Department of Revenue, we can help you through your contact with various tax authorities.</p>
+                  <p>From responding to tax notices to being audited by the IRS or state Department of Revenue, we can
+                    help you through your contact with various tax authorities.</p>
                 </div>
               </div>
             </nuxt-link>
@@ -99,7 +102,8 @@
                 After starting my own web consulting company,
                 I thought I'd use Turbo Tax like I had for years as an individual.
                 I decided to hire ABD to compare results. I'm glad I did because ABD was
-                able to maximize my deductions and saved me much more than Turbo Tax.<br/>  &mdash; Jason Jozwiak, Plan B Development LLC
+                able to maximize my deductions and saved me much more than Turbo Tax.<br/> &mdash; Jason Jozwiak, Plan B
+                Development LLC
               </p>
             </div>
           </div>
@@ -126,11 +130,16 @@
       return {
         title: 'Home',
         meta: [
-          { hid: 'description', name: 'description', content: 'ABD Tax Accounting LLC is a CPA firm in Boulder, Colorado specializing in tax preparation and tax planning for individuals and small businesses.' },
-          { hid: 'keywords', name: 'keywords', content: 'Boulder Tax Accounting, Boulder Tax Accountants, Boulder CPA'}
+          {
+            hid: 'description',
+            name: 'description',
+            content: 'ABD Tax Accounting LLC is a CPA firm in Boulder, Colorado specializing in tax preparation ' +
+            'and tax planning for individuals and small businesses.'
+          },
+          {hid: 'keywords', name: 'keywords', content: 'Boulder Tax Accounting, Boulder Tax Accountants, Boulder CPA'}
         ],
         link: [
-          { rel: 'canonical', href: process.env.baseURL }
+          {rel: 'canonical', href: process.env.baseURL}
         ]
       }
     }
@@ -162,7 +171,6 @@
       color: #FFF;
       font-family: Oswald;
       font-size: 1.5em;
-
       text-align: left;
       width: 100%;
       z-index: 100;
@@ -171,14 +179,15 @@
       }
     }
     @media screen and (min-width: 768px) {
-      font-size: 2.5em;
-      line-height: 1.6em;
+
       padding: 0 80px 0 40px;
       position: relative;
       margin-left: 0;
       top: 333px;
       z-index: 100;
       p {
+        font-size: 2.5em;
+        line-height: 1.6em;
         br {
           display: block;
         }
@@ -211,7 +220,8 @@
     max-width: 850px;
     p {
       font-size: 1.2em;
-    };
+    }
+  ;
     @media screen and (min-width: 768px) {
       margin: 100px auto;
       p {
@@ -240,7 +250,10 @@
       color: #fff;
       overflow: hidden;
       position: absolute;
-      top: 100%; right: 0; bottom: 0; left: 0;
+      top: 100%;
+      right: 0;
+      bottom: 0;
+      left: 0;
       transition: top 0.3s, right 0.3s, bottom 0.3s, left 0.3s, padding 0.3s;
       -moz-transition: top 0.3s, right 0.3s, bottom 0.3s, left 0.3s, padding 0.3s;
       -webkit-transition: top 0.3s, right 0.3s, bottom 0.3s, left 0.3s, padding 0.3s;
