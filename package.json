@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "@nuxtjs/sitemap": "^0.1.1",
-    "nuxt": "^1.0.0"
+    "nuxt": "^1.4.2"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.6",
