@@ -39,11 +39,7 @@
                     Preparation</h3>
                 </div>
                 <div class="overlay">
-                  <p>Lorem ipsum dolor sit amet consectetur
-                    adipisicing elit. Ea atque harum
-                    repudiandae autem vero explicabo
-                    repellendus fugiat aut, ratione.</p>
-                  <p><a href="#">Learn More</a></p>
+                  <p>We prepare a wide range of both federal and state tax returns for individuals and small businesses.</p>
                 </div>
               </div>
             </nuxt-link>
@@ -58,11 +54,7 @@
                   <h3 class="card-title">Tax Planning</h3>
                 </div>
                 <div class="overlay">
-                  <p>Lorem ipsum dolor sit amet consectetur
-                    adipisicing elit. Ea atque harum
-                    repudiandae autem vero explicabo
-                    repellendus fugiat aut, ratione.</p>
-                  <p><a href="#">Learn More</a></p>
+                  <p>No one likes surprises when it comes to tax.  We can help you plan the tax side of all your upcoming financial changes from selling your home to planning for retirement.</p>
                 </div>
               </div>
             </nuxt-link>
@@ -78,11 +70,7 @@
                     Representation</h3>
                 </div>
                 <div class="overlay">
-                  <p>Lorem ipsum dolor sit amet consectetur
-                    adipisicing elit. Ea atque harum
-                    repudiandae autem vero explicabo
-                    repellendus fugiat aut, ratione.</p>
-                  <p><a href="#">Learn More</a></p>
+                  <p>From responding to tax notices to being audited by the IRS or state Department of Revenue, we can help you through your contact with various tax authorities.</p>
                 </div>
               </div>
             </nuxt-link>
