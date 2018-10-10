@@ -21,7 +21,6 @@
     background-image: url('~/assets/cairns-cropped-b&w.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 0 -450px;
     height: $height;
     margin-top: 58px;
     overflow: hidden;
@@ -56,6 +55,10 @@
         width: 100%;
         z-index: 100;
       }
+    }
+
+    @media screen and (min-width: 768px) {
+      background-position: 0 -450px;
     }
   }
 
