@@ -1,7 +1,7 @@
 <template>
   <div id="about-content">
     <banner-component text="About"></banner-component>
-    <section class="about-section">
+    <section class="about-section pt-5 pb-5">
       <div class="container">
         <div class="row">
           <div class="col-sm-12">
@@ -12,7 +12,7 @@
           <div class="col-md-4">
             <img
                 src="~/assets/amber_alfano_headshot.jpg"
-                alt="portrait of Amber Alfano" class="img-fluid headshot">
+                alt="portrait of Amber Alfano" class="img-fluid mb-5">
           </div>
           <div class="col-md-8">
             <p>Amber Alfano is the owner and head CPA at ABD Tax Accounting LLC.
@@ -40,10 +40,6 @@
               or exploring the Colorado wilderness. She is an avid trail
               runner and hiker and a somewhat reluctant dirt bike rider. Amber
               is married and has two dogs whom she treats like children.</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-12">
             <h3>TLDR</h3>
             <p>Amber is a CPA
               and has an extensive background in tax. She thought she wanted
@@ -81,8 +77,11 @@
 
 <style scoped lang="scss">
   .about-section {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    /*padding-top: 100px;*/
+    /*padding-bottom: 100px;*/
+    .headshot {
+      margin-bottom: 2em;
+    }
   }
 </style>
 
