@@ -22,15 +22,15 @@
             <h4>Send Us an Email</h4>
             <form action="" class="footer-contact-form">
               <div class="form-group row">
-                <label for="email" class="col-form-label sr-only">Your Email</label>
+                <label for="contact-form-email-input" class="col-form-label sr-only">Your Email</label>
                 <div class="col-sm-12">
-                  <input type="email" name="email" placeholder="Your Email" class="form-control">
+                  <input id="contact-form-email-input" type="email" name="email" placeholder="Your Email" class="form-control">
                 </div>
               </div>
               <div class="form-group row">
-                <label for="message" class="col-form-label sr-only">Message</label>
+                <label for="contact-form-message-input" class="col-form-label sr-only">Message</label>
                 <div class="col-sm-12">
-                  <textarea name="message" id=""  rows="5" placeholder="Message" class="form-control"></textarea>
+                  <textarea id="contact-form-message-input" name="message" rows="5" placeholder="Message" class="form-control"></textarea>
                 </div>
               </div>
               <div class="form-group row">
@@ -42,7 +42,7 @@
           </div>
           <div class="col-md-1 offset-md-1 footer-social-media-links">
             <a href="https://www.linkedin.com/in/amber-alfano-2b6050a"
-               target="_blank">
+               target="_blank" rel="noopener">
               <svg aria-labelledby="simpleicons-linkedin-icon"
                    role="img" viewBox="0 0 24 24"
                    xmlns="http://www.w3.org/2000/svg"><title
@@ -52,7 +52,7 @@
                     d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
               </svg>
             </a>
-            <a href="https://www.facebook.com/ABDTax/" target="_blank">
+            <a href="https://www.facebook.com/ABDTax/" target="_blank" rel="noopener">
               <svg aria-labelledby="simpleicons-facebook-icon"
                    role="img" viewBox="0 0 24 24"
                    xmlns="http://www.w3.org/2000/svg"><title
