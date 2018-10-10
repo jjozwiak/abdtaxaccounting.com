@@ -7,7 +7,7 @@
             data-toggle="collapse" data-target="#collapsibleNavId"
             aria-controls="collapsibleNavId"
             aria-expanded="false" aria-label="Toggle navigation"
-            v-on:click="toggleMenu"
+            v-on:click="toggleHamburger"
     >
           <div id="nav-icon3">
             <span></span>
@@ -18,13 +18,13 @@
     </button>
     <div class="collapse navbar-collapse" id="collapsibleNavId">
       <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-        <li class="nav-item first">
+        <li class="nav-item first" v-on:click="clickMenuLink">
           <nuxt-link to="/" class="nav-link">Home</nuxt-link>
         </li>
-        <li class="nav-item">
+        <li class="nav-item" v-on:click="clickMenuLink">
           <nuxt-link to="/about" class="nav-link">About</nuxt-link>
         </li>
-        <li class="nav-item">
+        <li class="nav-item" v-on:click="clickMenuLink">
           <nuxt-link to="/services" class="nav-link">Services</nuxt-link>
         </li>
         <li class="nav-item last">
@@ -38,9 +38,13 @@
 <script>
   export default {
       methods: {
-        toggleMenu: function () {
+        toggleHamburger: function () {
           let hamburger = document.getElementById('nav-icon3');
           hamburger.classList.toggle('open');
+        },
+        clickMenuLink: function () {
+          $('.navbar-collapse').collapse('hide');
+          this.toggleHamburger();
         }
       }
   };
@@ -73,11 +77,16 @@
     .nav-item {
       a {
         font-family: Oswald;
-        font-size: 1.1em;
+        font-size: 1.6em;
         transition: color 0.2s;
         &:hover {
           color: $lavender !important;
         }
+      }
+    }
+    @media screen and (min-width: 768px) {
+      .nav-item {
+        font-size: 1.1em;
       }
     }
   }

@@ -82,7 +82,7 @@
       </div>
     </section>
     <section id="testimonials">
-      <div class="container mt-5 mb-sm-5 text-center">
+      <div class="container mt-5 mb-sm-5 mb-md-0 text-center">
         <h2>Testimonials</h2>
         <div id="carouselId" class="carousel slide"
              data-ride="carousel">
