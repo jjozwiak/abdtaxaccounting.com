@@ -20,18 +20,18 @@
           </div>
           <div class="col-md-5 footer-col">
             <h4>Send Us an Email</h4>
-            <form action="https://formspree.io/amber@abdtaxaccounting.com" method="POST" class="footer-contact-form">
+            <form @submit="validate" action="https://formspree.io/amber@abdtaxaccounting.com" method="POST" class="footer-contact-form" novalidate>
               <div class="form-group row">
                 <label for="contact-form-email-input" class="col-form-label sr-only">Your Email</label>
                 <div class="col-sm-12">
                   <input type="hidden" name="_subject" value="Website Inquiry" />
-                  <input id="contact-form-email-input" type="email" name="email" placeholder="Your Email" class="form-control">
+                  <input v-model="email" id="contact-form-email-input" type="email" name="email" placeholder="Your Email" class="form-control">
                 </div>
               </div>
               <div class="form-group row">
                 <label for="contact-form-message-input" class="col-form-label sr-only">Message</label>
                 <div class="col-sm-12">
-                  <textarea id="contact-form-message-input" name="message" rows="5" placeholder="Message" class="form-control"></textarea>
+                  <textarea v-model="message" id="contact-form-message-input" name="message" rows="5" placeholder="Message" class="form-control"></textarea>
                 </div>
               </div>
               <div class="form-group row">
@@ -85,8 +85,52 @@
     data() {
       return {
         siteName: process.env.siteName,
+        email: null,
+        message: null,
+        errors: []
       };
     },
+    methods : {
+      validate: function (e) {
+        //reset error array
+        this.errors = [];
+        let validEmail = this.isValidEmail(this.email);
+        let validMessage = this.isNotEmpty(this.message);
+        if (validEmail && validMessage) {
+          return true;
+        } else {
+          this.showErrorMessage(this.errors);
+        }
+
+        e.preventDefault();
+      },
+      isValidEmail: function (email) {
+
+        if (!this.isNotEmpty(email)) {
+          return false;
+        }
+
+        var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        let isValid = re.test(String(email).toLowerCase());
+        if (!isValid) {
+          this.errors.push('email is NOT valid');
+        }
+        return isValid;
+      },
+      isNotEmpty: function(value) {
+        if (value === null || value === '') {
+          this.errors.push('this field is required');
+          return false;
+        } else {
+          return true;
+        }
+      },
+      showErrorMessage: function (message) {
+        console.log(message);
+
+        alert(message);
+      }
+    }
   };
 </script>
 
