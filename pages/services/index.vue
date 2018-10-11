@@ -77,6 +77,7 @@
 <script>
   import BannerComponent from '~/components/BannerComponent.vue'
   export default {
+    scrollToTop: true,
     components: {
       BannerComponent
     },
@@ -112,7 +113,7 @@
   }
 
   .row {
-    padding-top: 100px;
     padding-bottom: 100px;
+    padding-top: 100px;
   }
 </style>

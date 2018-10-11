@@ -122,10 +122,10 @@
         display: inline-block;
         svg {
           fill: $prussian-blue;
-          width: 30px;
           transition: all 0.3s ease;
           -moz-transition: all 0.3s ease;
           -webkit-transition: all 0.3s ease;
+          width: 30px;
         }
         &:hover {
           svg {

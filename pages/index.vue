@@ -89,21 +89,19 @@
           <div class="carousel-inner" role="listbox">
             <div class="carousel-item active">
               <p class="testimonial-quote">
-                "Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Fuga aliquid in dolor commodi
-                laboriosam quis exercitationem, quas,
-                neque suscipit nobis dicta officia perferendis.
-                Nesciunt ab iste inventore accusantium magni
-                voluptates."<br/> &mdash; Firstname Lastname
+                "As a lapsed CPA living abroad, I didn't have the time or interest in figuring out our family's income
+                taxes last year. By spending just $40 more than TurboTax, ABD was able to save us almost $700 on our
+                annual tax liability. We'll be clients for life!"
+                <br/> &mdash; Mia Billetdeaux, Solopreneur
               </p>
             </div>
             <div class="carousel-item">
               <p class="testimonial-quote">
-                After starting my own web consulting company,
+                "After starting my own web consulting company,
                 I thought I'd use Turbo Tax like I had for years as an individual.
                 I decided to hire ABD to compare results. I'm glad I did because ABD was
-                able to maximize my deductions and saved me much more than Turbo Tax.<br/> &mdash; Jason Jozwiak, Plan B
-                Development LLC
+                able to maximize my deductions and saved me much more than TurboTax."<br/> &mdash; Jason Jozwiak, Plan B
+                Dev LLC
               </p>
             </div>
           </div>
@@ -125,6 +123,7 @@
 
 <script>
   export default {
+    scrollToTop: true,
     components: {},
     head() {
       return {
@@ -157,62 +156,62 @@
     margin-top: 58px;
     overflow: hidden;
     position: relative;
+
+    &:before {
+      background: rgba(37, 93, 110, 0.9);
+      bottom: -500px;
+      content: '';
+      display: none;
+      height: 900px;
+      left: 0;
+      position: absolute;
+      transform: skewY(26.5deg);
+      -webkit-transform: skewY(26.5deg);
+      -moz-transform: skewY(26.5deg);
+      -ms-transform: skewY(26.5deg);
+      -o-transform: skewY(26.5deg);
+      -webkit-backface-visibility: hidden;
+      width: 100%;
+      z-index: 10;
+    }
+
+    .lead {
+      bottom: 0;
+      width: 100%;
+      p {
+        color: #FFF;
+        font-family: Oswald;
+        font-size: 1.5em;
+        text-align: left;
+        width: 100%;
+        z-index: 100;
+        br {
+          display: none;
+        }
+      }
+    }
+
     @media screen and (min-width: 768px) {
       background-color: transparent;
       background-image: url('~/assets/red-rocks-alt-cropped-b&w.jpg');
       height: 900px;
-    }
-  }
-
-  .jumbotron-home .lead {
-    bottom: 0;
-    width: 100%;
-    p {
-      color: #FFF;
-      font-family: Oswald;
-      font-size: 1.5em;
-      text-align: left;
-      width: 100%;
-      z-index: 100;
-      br {
-        display: none;
+      &:before {
+        display: block;
       }
-    }
-    @media screen and (min-width: 768px) {
-
-      padding: 0 80px 0 40px;
-      position: relative;
-      margin-left: 0;
-      top: 333px;
-      z-index: 100;
-      p {
-        font-size: 2.5em;
-        line-height: 1.6em;
-        br {
-          display: block;
+      .lead {
+        margin-left: 0;
+        padding: 0 80px 0 40px;
+        position: relative;
+        top: 333px;
+        z-index: 100;
+        p {
+          font-size: 2.5em;
+          line-height: 1.6em;
+          br {
+            display: block;
+          }
         }
       }
-    }
-  }
-
-  .jumbotron-home:before {
-    background: rgba(37, 93, 110, 0.9);
-    bottom: -500px;
-    content: '';
-    display: none;
-    height: 900px;
-    left: 0;
-    position: absolute;
-    transform: skewY(26.5deg);
-    -webkit-transform: skewY(26.5deg);
-    -moz-transform: skewY(26.5deg);
-    -ms-transform: skewY(26.5deg);
-    -o-transform: skewY(26.5deg);
-    -webkit-backface-visibility: hidden;
-    width: 100%;
-    z-index: 10;
-    @media screen and (min-width: 768px) {
-      display: block;
     }
   }
 
@@ -221,7 +220,7 @@
     p {
       font-size: 1.2em;
     }
-  ;
+
     @media screen and (min-width: 768px) {
       margin: 100px auto;
       p {
@@ -247,16 +246,16 @@
     }
     .overlay {
       background: rgba(37, 93, 110, 0.9);
+      bottom: 0;
       color: #fff;
+      left: 0;
       overflow: hidden;
       position: absolute;
-      top: 100%;
       right: 0;
-      bottom: 0;
-      left: 0;
       transition: top 0.3s, right 0.3s, bottom 0.3s, left 0.3s, padding 0.3s;
       -moz-transition: top 0.3s, right 0.3s, bottom 0.3s, left 0.3s, padding 0.3s;
       -webkit-transition: top 0.3s, right 0.3s, bottom 0.3s, left 0.3s, padding 0.3s;
+      top: 100%;
       width: 100%;
       a {
         color: #FFF;

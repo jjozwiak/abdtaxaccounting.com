@@ -56,6 +56,7 @@
 <script>
   import BannerComponent from '~/components/BannerComponent.vue'
   export default {
+    scrollToTop: true,
     components: {
       BannerComponent
     },
@@ -73,16 +74,3 @@
     }
   }
 </script>
-
-
-<style scoped lang="scss">
-  .about-section {
-    /*padding-top: 100px;*/
-    /*padding-bottom: 100px;*/
-    .headshot {
-      margin-bottom: 2em;
-    }
-  }
-</style>
-
-

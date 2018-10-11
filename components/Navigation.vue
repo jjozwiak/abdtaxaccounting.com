@@ -8,7 +8,7 @@
             aria-controls="collapsibleNavId"
             aria-expanded="false" aria-label="Toggle navigation"
             v-on:click="toggleHamburger">
-          <div id="nav-icon3">
+          <div id="nav-icon">
             <span></span>
             <span></span>
             <span></span>
@@ -38,7 +38,7 @@
   export default {
       methods: {
         toggleHamburger: function () {
-          let hamburger = document.getElementById('nav-icon3');
+          let hamburger = document.getElementById('nav-icon');
           hamburger.classList.toggle('open');
         },
         clickMenuLink: function () {
@@ -93,75 +93,74 @@
     }
   }
 
-  #nav-icon3 {
-    width: 40px;
+  #nav-icon {
+    cursor: pointer;
     height: 32px;
-    position: relative;
     margin: 5px auto;
+    position: relative;
+    transform: rotate(0deg);
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
     -o-transform: rotate(0deg);
-    transform: rotate(0deg);
+    transition: .5s ease-in-out;
     -webkit-transition: .5s ease-in-out;
     -moz-transition: .5s ease-in-out;
     -o-transition: .5s ease-in-out;
-    transition: .5s ease-in-out;
-    cursor: pointer;
-  }
+    width: 40px;
+    span {
+      background: $paper;
+      display: block;
+      height: 3px;
+      left: 0;
+      opacity: 1;
+      position: absolute;
+      transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transition: .25s ease-in-out;
+      -webkit-transition: .25s ease-in-out;
+      -moz-transition: .25s ease-in-out;
+      -o-transition: .25s ease-in-out;
+      width: 100%;
+      &:nth-child(1) {
+        top: 0px;
+      }
 
-  #nav-icon3 span {
-    display: block;
-    position: absolute;
-    height: 3px;
-    width: 100%;
-    background: $paper;
-    opacity: 1;
-    left: 0;
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg);
-    -webkit-transition: .25s ease-in-out;
-    -moz-transition: .25s ease-in-out;
-    -o-transition: .25s ease-in-out;
-    transition: .25s ease-in-out;
-  }
+      &:nth-child(2), &:nth-child(3) {
+        top: 15px;
+      }
 
-  #nav-icon3 span:nth-child(1) {
-    top: 0px;
-  }
+      &:nth-child(4) {
+        top: 30px;
+      }
+    }
 
-  #nav-icon3 span:nth-child(2),#nav-icon3 span:nth-child(3) {
-    top: 15px;
-  }
-
-  #nav-icon3 span:nth-child(4) {
-    top: 30px;
-  }
-
-  #nav-icon3.open span:nth-child(1) {
-    top: 18px;
-    width: 0%;
-    left: 50%;
-  }
-
-  #nav-icon3.open span:nth-child(2) {
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    transform: rotate(45deg);
-  }
-
-  #nav-icon3.open span:nth-child(3) {
-    -webkit-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    -o-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-  }
-
-  #nav-icon3.open span:nth-child(4) {
-    top: 18px;
-    width: 0%;
-    left: 50%;
+    &.open {
+      span {
+        &:nth-child(1) {
+          left: 50%;
+          top: 18px;
+          width: 0%;
+        }
+        &:nth-child(2) {
+          transform: rotate(45deg);
+          -webkit-transform: rotate(45deg);
+          -moz-transform: rotate(45deg);
+          -o-transform: rotate(45deg);
+        }
+        &:nth-child(3) {
+          transform: rotate(-45deg);
+          -webkit-transform: rotate(-45deg);
+          -moz-transform: rotate(-45deg);
+          -o-transform: rotate(-45deg);
+        }
+        &:nth-child(4) {
+          left: 50%;
+          top: 18px;
+          width: 0%;
+        }
+      }
+    }
   }
 </style>

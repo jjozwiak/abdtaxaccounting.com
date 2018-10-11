@@ -28,13 +28,12 @@
 
     &:before {
       background: rgba(37, 93, 110, 0.7);
-
       content: '';
       height: $height;
       left: 0;
       position: absolute;
-      -webkit-backface-visibility: hidden;
       width: 100%;
+      -webkit-backface-visibility: hidden;
       z-index: 10;
     }
     h1 {
