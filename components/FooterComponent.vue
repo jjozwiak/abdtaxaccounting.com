@@ -77,6 +77,26 @@
         </div>
       </div>
     </div>
+    <div id="errorModal" class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Error Message</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="alert alert-danger">
+              <ul>
+                <li v-if="errors[0]">{{errors[0]}}</li>
+                <li v-if="errors[1]">{{errors[1]}}</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </footer>
 </template>
 
@@ -95,7 +115,7 @@
         //reset error array
         this.errors = [];
         let validEmail = this.isValidEmail(this.email);
-        let validMessage = this.isNotEmpty(this.message);
+        let validMessage = this.isNotEmpty('Message', this.message);
         if (validEmail && validMessage) {
           return true;
         } else {
@@ -106,29 +126,28 @@
       },
       isValidEmail: function (email) {
 
-        if (!this.isNotEmpty(email)) {
+        if (!this.isNotEmpty('Email', email)) {
           return false;
         }
 
         var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
         let isValid = re.test(String(email).toLowerCase());
         if (!isValid) {
-          this.errors.push('email is NOT valid');
+          this.errors.push('Email is not valid.');
         }
         return isValid;
       },
-      isNotEmpty: function(value) {
+      isNotEmpty: function(field, value) {
         if (value === null || value === '') {
-          this.errors.push('this field is required');
+          this.errors.push(field + ' field is required.');
           return false;
         } else {
           return true;
         }
       },
       showErrorMessage: function (message) {
+        $('#errorModal').modal('show');
         console.log(message);
-
-        alert(message);
       }
     }
   };
