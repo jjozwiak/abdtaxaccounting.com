@@ -9,6 +9,10 @@ module.exports = {
     }]
   ],
 
+  generate: {
+    routes: ['404']
+  },
+
   /*
   ** Environment Variables
   */

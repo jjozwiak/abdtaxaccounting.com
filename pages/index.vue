@@ -248,6 +248,7 @@
       background: rgba(37, 93, 110, 0.9);
       bottom: 0;
       color: #fff;
+      font-size: 1.3em;
       left: 0;
       overflow: hidden;
       position: absolute;
