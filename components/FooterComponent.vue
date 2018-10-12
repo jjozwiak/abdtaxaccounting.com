@@ -36,6 +36,7 @@
               </div>
               <div class="form-group row">
                 <div class="col-sm-3">
+                  <input type="hidden" name="_next" v-bind:value="TYUrl" />
                   <input type="text" name="_gotcha" style="display:none" />
                   <input type="submit" value="Send" class="btn">
                 </div>
@@ -105,6 +106,8 @@
     data() {
       return {
         siteName: process.env.siteName,
+        baseURL: process.env.baseURL,
+        TYUrl: process.env.baseURL + '/thanks',
         email: null,
         message: null,
         errors: []
