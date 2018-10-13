@@ -16,7 +16,7 @@
           </div>
     </button>
     <div class="collapse navbar-collapse" id="collapsibleNavId">
-      <ul class="navbar-nav mr-auto mt-2 mb-3 mt-lg-0">
+      <ul class="navbar-nav mr-auto mt-2 mb-3 mb-md-0 mt-lg-0">
         <li class="nav-item first" v-on:click="clickMenuLink">
           <nuxt-link to="/" class="nav-link">Home</nuxt-link>
         </li>
