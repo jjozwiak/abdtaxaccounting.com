@@ -82,6 +82,9 @@
         &:hover {
           color: $lavender !important;
         }
+        &.nuxt-link-exact-active {
+          color: $lavender !important;
+        }
       }
     }
     @media screen and (min-width: 768px) {
