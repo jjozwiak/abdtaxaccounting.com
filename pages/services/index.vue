@@ -1,15 +1,14 @@
 <template>
   <div id="services-content">
     <banner-component text="Services"></banner-component>
-    <section>
+    <section class="mt-5 mb-5 mb-md-0 mt-md-0">
       <div class="container">
         <div class="row">
           <div class="col-md-6">
-            <img src="~/assets/paper_stack_lg.jpg" alt="Stack of Color Coded Files" class="img-fluid">
+            <img src="~/assets/paper_stack_lg.jpg" alt="Stack of Color Coded Files" class="img-fluid mb-4">
           </div>
           <div class="col-md-6">
-            <h2 id="tax-return-preparation">Tax Return
-              Preparation</h2>
+            <h2 id="tax-return-preparation">Tax Return Preparation</h2>
             <p>Our modern return preparation software allows us to
               complete a wide variety of returns for you and your
               business. We also offer electronic filling of
@@ -26,10 +25,10 @@
         </div>
       </div>
     </section>
-    <section class="tax-planning">
+    <section class="tax-planning mb-5 mb-md-0">
       <div class="container">
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-6 order-2">
             <h2>Tax Planning</h2>
             <p>Back in 1935 Federal Judge Learned Hand said "Anyone
               may arrange his affairs so that his taxes shall be
@@ -47,17 +46,17 @@
               <li>Buying/Selling or starting a business</li>
             </ul>
           </div>
-          <div class="col-md-6">
-            <img src="~/assets/services-tax-planning.jpg" alt="" class="img-fluid">
+          <div class="col-md-6 order-1">
+            <img src="~/assets/services-tax-planning.jpg" alt="" class="img-fluid mb-4">
           </div>
         </div>
       </div>
     </section>
-    <section>
+    <section class="mb-5 mb-md-0">
       <div class="container">
         <div class="row">
           <div class="col-md-6">
-            <img src="~/assets/services-audit-representation.jpg" alt="" class="img-fluid">
+            <img src="~/assets/services-audit-representation.jpg" alt="" class="img-fluid mb-4">
           </div>
           <div class="col-md-6">
             <h2>Tax Audit Assistance and IRS Representation</h2>
@@ -109,11 +108,33 @@
   }
 
   .tax-planning {
-    background: $paper;
+    @media screen and (min-width: 768px) {
+      background: $paper;
+    }
   }
 
   .row {
-    padding-bottom: 100px;
-    padding-top: 100px;
+    @media screen and (min-width: 768px) {
+      padding-bottom: 100px;
+      padding-top: 100px;
+    }
+  }
+
+  .order-1 {
+    order: 1;
+  }
+
+  .order-2 {
+    order: 2;
+  }
+
+  @media screen and (min-width: 768px) {
+    .order-1 {
+      order: 2;
+    }
+
+    .order-2 {
+      order: 1;
+    }
   }
 </style>

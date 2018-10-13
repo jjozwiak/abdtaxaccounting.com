@@ -15,13 +15,12 @@
 <style scoped lang="scss">
 
   @import "~/scss/_variables.scss";
-  $height: 350px;
 
   header {
-    background-image: url('~/assets/cairns-cropped-b&w.jpg');
+    background-image: url('~/assets/cairns-cropped-b&w-sm.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    height: $height;
+    height: 150px;
     margin-top: 58px;
     overflow: hidden;
     position: relative;
@@ -29,7 +28,7 @@
     &:before {
       background: rgba(37, 93, 110, 0.7);
       content: '';
-      height: $height;
+      height: 150px;
       left: 0;
       position: absolute;
       width: 100%;
@@ -55,9 +54,15 @@
         z-index: 100;
       }
     }
-
     @media screen and (min-width: 768px) {
-      background-position: 0 -450px;
+      background-image: url('~/assets/cairns-cropped-b&w-md.jpg');
+      height: 300px;
+      &:before {
+        height: 300px;
+      }
+    }
+    @media screen and (min-width: 1024px) {
+      background-image: url('~/assets/cairns-cropped-b&w.jpg');
     }
   }
 

@@ -27,7 +27,7 @@
           <div class="col-sm-12">
             <h2>Services</h2>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 mb-5">
             <nuxt-link to="/services#tax-return-preparation"
                        class="service-link">
               <div class="card text-left">
@@ -45,7 +45,7 @@
               </div>
             </nuxt-link>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 mb-5">
             <nuxt-link to="/services" class="service-link">
               <div class="card text-left">
                 <img class="card-img-top"
@@ -61,7 +61,7 @@
               </div>
             </nuxt-link>
           </div>
-          <div class="col-md">
+          <div class="col-md mb-5">
             <nuxt-link to="/services" class="service-link">
               <div class="card text-left">
                 <img class="card-img-top"
@@ -82,7 +82,7 @@
       </div>
     </section>
     <section id="testimonials">
-      <div class="container mt-5 mb-sm-5 mb-md-0 text-center">
+      <div class="container carousel-container mt-5 mb-5 text-center">
         <h2>Testimonials</h2>
         <div id="carouselId" class="carousel slide"
              data-ride="carousel">
@@ -101,7 +101,7 @@
                 I thought I'd use Turbo Tax like I had for years as an individual.
                 I decided to hire ABD to compare results. I'm glad I did because ABD was
                 able to maximize my deductions and saved me much more than TurboTax."<br/> &mdash; Jason Jozwiak, Plan B
-                Dev LLC
+                Dev
               </p>
             </div>
           </div>
@@ -150,7 +150,8 @@
   @import "~/scss/_variables.scss";
 
   .jumbotron-home {
-    background-color: $teal;
+    background-image: url('~/assets/red-rocks-alt-cropped-b&w-sm.jpg');
+    background-color: transparent;
     background-repeat: no-repeat;
     background-size: cover;
     margin-top: 58px;
@@ -161,16 +162,10 @@
       background: rgba(37, 93, 110, 0.9);
       bottom: -500px;
       content: '';
-      display: none;
-      height: 900px;
+      height: 1000px;
       left: 0;
       position: absolute;
-      transform: skewY(26.5deg);
-      -webkit-transform: skewY(26.5deg);
-      -moz-transform: skewY(26.5deg);
-      -ms-transform: skewY(26.5deg);
-      -o-transform: skewY(26.5deg);
-      -webkit-backface-visibility: hidden;
+
       width: 100%;
       z-index: 10;
     }
@@ -182,6 +177,7 @@
         color: #FFF;
         font-family: Oswald;
         font-size: 1.5em;
+        position: relative;
         text-align: left;
         width: 100%;
         z-index: 100;
@@ -190,6 +186,10 @@
         }
       }
     }
+    @media screen and (min-width: 580px){
+      background-image: url('~/assets/red-rocks-alt-cropped-b&w-md.jpg');
+
+    }
 
     @media screen and (min-width: 768px) {
       background-color: transparent;
@@ -197,15 +197,22 @@
       height: 900px;
       &:before {
         display: block;
+        transform: skewY(26.5deg);
+        -webkit-transform: skewY(26.5deg);
+        -moz-transform: skewY(26.5deg);
+        -ms-transform: skewY(26.5deg);
+        -o-transform: skewY(26.5deg);
+        -webkit-backface-visibility: hidden;
       }
       .lead {
         margin-left: 0;
+        max-width: 100%;
         padding: 0 80px 0 40px;
         position: relative;
-        top: 333px;
+        top: 360px;
         z-index: 100;
         p {
-          font-size: 2.5em;
+          font-size: 2em;
           line-height: 1.6em;
           br {
             display: block;
@@ -213,7 +220,37 @@
         }
       }
     }
+
+    @media screen and (min-width: 990px) {
+      &:before {
+        display: block;
+        height: 1000px;
+        transform: skewY(26.5deg);
+        -webkit-transform: skewY(26.5deg);
+        -moz-transform: skewY(26.5deg);
+        -ms-transform: skewY(26.5deg);
+        -o-transform: skewY(26.5deg);
+        -webkit-backface-visibility: hidden;
+      }
+      .lead {
+        p {
+          font-size: 2.5em;
+          line-height: 1.6em;
+          /*br {*/
+          /*display: block;*/
+          /*}*/
+        }
+      }
+    }
+
+    @media screen and (min-width: 1200px) {
+      &:before {
+        height: 900px;
+      }
+    }
   }
+
+
 
   .home-intro {
     max-width: 850px;
@@ -231,7 +268,7 @@
 
   .card {
     border-radius: 0;
-    margin-bottom: 2em;
+    height: 100%;
     position: relative;
     h3 {
       color: $copy;
@@ -248,7 +285,7 @@
       background: rgba(37, 93, 110, 0.9);
       bottom: 0;
       color: #fff;
-      font-size: 1.3em;
+      font-size: 1em;
       left: 0;
       overflow: hidden;
       position: absolute;
@@ -263,6 +300,9 @@
         &:hover {
           text-decoration: none !important;
         }
+      }
+      @media screen and (min-width: 1024px) {
+        font-size: 1.2em;
       }
 
     }
@@ -291,7 +331,7 @@
   }
 
   .carousel-inner {
-    height: 150px;
+    height: auto;
   }
 
   .carousel-control-next,
@@ -303,10 +343,26 @@
     display: block;
     margin: 0 auto;
     max-width: 800px;
+    padding: 0 50px;
+  }
+
+  .carousel-container {
+    @media screen and (max-width: 1024px){
+      max-width: 100%;
+    }
   }
 
   .fas {
     color: $prussian-blue;
     font-size: 2em;
+  }
+  .fa-angle-left {
+    position: absolute;
+    left: 0;
+  }
+
+  .fa-angle-right {
+    position: absolute;
+    right: 0;
   }
 </style>
