@@ -156,7 +156,6 @@
       },
       showErrorMessage: function (message) {
         $('#errorModal').modal('show');
-        console.log(message);
       }
     }
   };
