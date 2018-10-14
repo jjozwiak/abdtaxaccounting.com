@@ -47,7 +47,7 @@
             </ul>
           </div>
           <div class="col-md-6 order-1">
-            <img src="~/assets/services-tax-planning.jpg" alt="" class="img-fluid mb-4">
+            <img src="~/assets/services-tax-planning.jpg" alt="Man in suit using a calculator and computer" class="img-fluid mb-4">
           </div>
         </div>
       </div>
@@ -56,7 +56,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-6">
-            <img src="~/assets/services-audit-representation.jpg" alt="" class="img-fluid mb-4">
+            <img src="~/assets/services-audit-representation.jpg" alt="Overhead view of a meeting where people are analyzing charts and graphs" class="img-fluid mb-4">
           </div>
           <div class="col-md-6">
             <h2>Tax Audit Assistance and IRS Representation</h2>
