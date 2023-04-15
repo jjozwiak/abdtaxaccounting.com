@@ -15,7 +15,7 @@
               <span>amber</span><span>@abdtaxaccounting</span>.com
             </p>
             <address>
-              2505 Walnut Street, Suite 300<br/> Boulder, CO 80302
+              1650 38th Street Suite 203E<br/> Boulder CO 80301
             </address>
           </div>
           <div class="col-md-4 col-lg-5 footer-col">
@@ -79,7 +79,7 @@
       <div class="container">
         <div class="row pt-1">
           <div class="col-sm-12">
-            <p>&copy;2018 {{siteName}}</p>
+            <p>&copy;{{ year }} {{siteName}}</p>
           </div>
         </div>
       </div>
@@ -116,7 +116,8 @@
         TYUrl: process.env.baseURL + '/thanks',
         email: null,
         message: null,
-        errors: []
+        errors: [],
+        year: new Date().getFullYear()
       };
     },
     methods : {

@@ -100,8 +100,7 @@
                 "After starting my own web consulting company,
                 I thought I'd use Turbo Tax like I had for years as an individual.
                 I decided to hire ABD to compare results. I'm glad I did because ABD was
-                able to maximize my deductions and saved me much more than TurboTax."<br/> &mdash; Jason Jozwiak, Plan B
-                Dev
+                able to maximize my deductions and saved me much more than TurboTax."<br/> &mdash; Jason Jozwiak, Logos Solutions
               </p>
             </div>
           </div>
